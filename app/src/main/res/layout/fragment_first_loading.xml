@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Icon buku (kanan atas logo) -->
+    <ImageView
+        android:id="@+id/ic_book"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:alpha="0.35"
+        app:tint="#7A7A4A"
+        app:layout_constraintTop_toTopOf="@id/card_logo"
+        app:layout_constraintStart_toEndOf="@id/card_logo"
+        app:layout_constraintBottom_toTopOf="@id/card_logo"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="-8dp" />
+
+    <!-- Icon grup (kiri bawah logo) -->
+    <ImageView
+        android:id="@+id/ic_group"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:alpha="0.35"
+        app:tint="#7A7A4A"
+        app:layout_constraintTop_toBottomOf="@id/card_logo"
+        app:layout_constraintEnd_toStartOf="@id/card_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Card putih logo -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVerticalBias="0.42">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            app:tint="#6B6B2A" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Nama app -->
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SConn"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#4A4A1A"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@id/tv_tagline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tv_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Study Connection"
+        android:textSize="14sp"
+        android:textColor="#7A7A4A"
+        android:letterSpacing="0.05"
+        app:layout_constraintBottom_toTopOf="@id/dots_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Dots indicator -->
+    <LinearLayout
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="48dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="6dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="6dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
