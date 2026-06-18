@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    tools:context=".HomeFragment">
 
     <!-- TOP NAVBAR -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -165,7 +167,6 @@
                         android:id="@+id/ic_partners"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_find_partners"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toTopOf="@id/tv_find_partners"
                         app:layout_constraintStart_toStartOf="parent"
@@ -206,7 +207,6 @@
                         android:id="@+id/ic_places"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/ic_browse_places"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toTopOf="@id/tv_browse_places"
                         app:layout_constraintStart_toStartOf="parent"
@@ -280,7 +280,6 @@
                             android:id="@+id/iv_partner1"
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
-                            android:src="@drawable/img_partner1"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -289,7 +288,6 @@
                             android:text="95% Match"
                             android:textSize="11sp"
                             android:textColor="#FFFFFF"
-                            android:background="@drawable/bg_match_badge"
                             android:paddingHorizontal="8dp"
                             android:paddingVertical="4dp"
                             android:layout_gravity="top|end"
@@ -339,7 +337,6 @@
                             android:id="@+id/iv_partner2"
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
-                            android:src="@drawable/img_partner2"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -348,7 +345,6 @@
                             android:text="92% Match"
                             android:textSize="11sp"
                             android:textColor="#FFFFFF"
-                            android:background="@drawable/bg_match_badge"
                             android:paddingHorizontal="8dp"
                             android:paddingVertical="4dp"
                             android:layout_gravity="top|end"
@@ -428,7 +424,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/img_place1"
                         android:scaleType="centerCrop"/>
 
                     <LinearLayout
@@ -493,7 +488,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/img_place2"
                         android:scaleType="centerCrop"/>
 
                     <LinearLayout
@@ -558,7 +552,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/img_place3"
                         android:scaleType="centerCrop"/>
 
                     <LinearLayout
@@ -614,5 +607,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

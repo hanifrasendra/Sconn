@@ -2,9 +2,11 @@
 <androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    tools:context=".RegisterFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -61,45 +63,6 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
-        <!-- Progress Bar -->
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="0dp"
-            android:layout_height="6dp"
-            android:layout_marginTop="24dp"
-            android:progress="33"
-            android:progressTint="#6B6B2A"
-            android:progressBackgroundTint="#D9D9D9"
-            app:layout_constraintTop_toBottomOf="@id/subtitle"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <!-- Step label kiri -->
-        <TextView
-            android:id="@+id/step_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Step 1: Identity"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            android:textColor="#6B6B2A"
-            android:layout_marginTop="6dp"
-            app:layout_constraintTop_toBottomOf="@id/progress_bar"
-            app:layout_constraintLeft_toLeftOf="parent"/>
-
-        <!-- Step counter kanan -->
-        <TextView
-            android:id="@+id/step_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1 of 3"
-            android:textSize="13sp"
-            android:textColor="#1C1C0E"
-            android:layout_marginTop="6dp"
-            app:layout_constraintTop_toBottomOf="@id/progress_bar"
-            app:layout_constraintRight_toRightOf="parent"/>
-
         <!-- Full Name Label -->
         <TextView
             android:id="@+id/full_name_label"
@@ -110,7 +73,7 @@
             android:textStyle="bold"
             android:textColor="#1C1C0E"
             android:layout_marginTop="28dp"
-            app:layout_constraintTop_toBottomOf="@id/step_label"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <!-- Full Name Input -->
@@ -131,6 +94,64 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
+        <!-- Major Study Label -->
+        <TextView
+            android:id="@+id/major_study_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAJOR STUDY"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#1C1C0E"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/et_full_name"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <!-- Major Study Input -->
+        <EditText
+            android:id="@+id/et_major_study"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Computer Science"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/major_study_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <!-- Associate Label -->
+        <TextView
+            android:id="@+id/associate_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSOCIATE / UNIVERSITY"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#1C1C0E"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/et_major_study"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <!-- Associate Input -->
+        <EditText
+            android:id="@+id/et_associate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="University of Indonesia"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/associate_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
         <!-- Email Label -->
         <TextView
             android:id="@+id/email_label"
@@ -141,7 +162,7 @@
             android:textStyle="bold"
             android:textColor="#1C1C0E"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/et_full_name"
+            app:layout_constraintTop_toBottomOf="@id/et_associate"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <!-- Email Input -->
@@ -162,6 +183,36 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
+        <!-- Password Label -->
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#1C1C0E"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/et_email"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="* * * * *"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:drawablePadding="12dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/password_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
         <!-- Continue Button -->
         <Button
             android:id="@+id/btn_register"
@@ -173,7 +224,7 @@
             android:backgroundTint="#F5F0A0"
             android:layout_marginTop="40dp"
             app:cornerRadius="100dp"
-            app:layout_constraintTop_toBottomOf="@id/et_email"
+            app:layout_constraintTop_toBottomOf="@id/et_password"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
