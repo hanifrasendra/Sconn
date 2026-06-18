@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:text="SConn"
-            android:textColor="@color/link_color"
+            android:textColor="#48473B"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +65,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                android:background="@drawable/bg_edittext"
+                android:background="@drawable/custom_input"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingHorizontal="16dp">
@@ -85,7 +85,7 @@
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:paddingHorizontal="12dp"
-                    android:textColor="@color/dark_text"
+                    android:textColor="#191C1D"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -113,8 +113,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_badge_match"
-                            android:backgroundTint="@color/link_color"
+                            android:backgroundTint="#48473B"
                             android:paddingHorizontal="12dp"
                             android:paddingVertical="4dp"
                             android:text="88% Match"
@@ -129,7 +128,6 @@
                             android:id="@+id/iv_avatar1"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/bg_circle_yellow"
                             android:padding="2dp"
                             android:src="@drawable/ic_profile"
                             android:contentDescription="Alex Rivera"
@@ -199,10 +197,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginTop="16dp"
-                            android:background="@drawable/bg_button_yellow"
                             android:text="Send Request"
                             android:textAllCaps="false"
-                            android:textColor="@color/link_color"
+                            android:textColor="#48473B"
                             android:textStyle="bold"
                             app:backgroundTint="@null"
                             app:layout_constraintTop_toBottomOf="@id/availability1" />
@@ -227,8 +224,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_badge_match"
-                            android:backgroundTint="@color/link_color"
+                            android:backgroundTint="#48473B"
                             android:paddingHorizontal="12dp"
                             android:paddingVertical="4dp"
                             android:text="94% Match"
@@ -243,7 +239,6 @@
                             android:id="@+id/iv_avatar2"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/bg_circle_yellow"
                             android:padding="2dp"
                             android:src="@drawable/ic_profile"
                             android:contentDescription="Elena Chen"
@@ -313,10 +308,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginTop="16dp"
-                            android:background="@drawable/bg_button_yellow"
                             android:text="Send Request"
                             android:textAllCaps="false"
-                            android:textColor="@color/link_color"
+                            android:textColor="#48473B"
                             android:textStyle="bold"
                             app:backgroundTint="@null"
                             app:layout_constraintTop_toBottomOf="@id/availability2" />
@@ -341,8 +335,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_badge_match"
-                            android:backgroundTint="@color/link_color"
+                            android:backgroundTint="#48473B"
                             android:paddingHorizontal="12dp"
                             android:paddingVertical="4dp"
                             android:text="72% Match"
@@ -357,7 +350,6 @@
                             android:id="@+id/iv_avatar3"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:background="@drawable/bg_circle_yellow"
                             android:padding="2dp"
                             android:src="@drawable/ic_profile"
                             android:contentDescription="Jordan Smith"
@@ -427,10 +419,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginTop="16dp"
-                            android:background="@drawable/bg_button_yellow"
                             android:text="Send Request"
                             android:textAllCaps="false"
-                            android:textColor="@color/link_color"
+                            android:textColor="#48473B"
                             android:textStyle="bold"
                             app:backgroundTint="@null"
                             app:layout_constraintTop_toBottomOf="@id/availability3" />
@@ -443,118 +434,15 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <!-- Bottom Navigation -->
-    <LinearLayout
+    <!-- BOTTOM NAVIGATION -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="@color/white"
-        android:elevation="12dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home"
-                android:contentDescription="Home Nav" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Home"
-                android:textColor="#48473B"
-                android:textSize="11sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_partners"
-                android:contentDescription="Partners Nav"
-                app:tint="@color/link_color" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Partners"
-                android:textColor="@color/link_color"
-                android:textSize="11sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_places"
-                android:contentDescription="Places Nav" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Places"
-                android:textColor="#48473B"
-                android:textSize="11sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_alerts"
-                android:contentDescription="Alerts Nav" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Alerts"
-                android:textColor="#48473B"
-                android:textSize="11sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_profile"
-                android:contentDescription="Profile Nav" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Profile"
-                android:textColor="#48473B"
-                android:textSize="11sp" />
-        </LinearLayout>
-
-    </LinearLayout>
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
